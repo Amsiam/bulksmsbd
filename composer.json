@@ -1,0 +1,30 @@
+{
+    "name": "amsiam/bulksmsbd",
+    "description": "This is for sending sms by using bulksmsbd.net api.",
+    "type": "plugin",
+    "autoload": {
+        "psr-4": {
+            "Amsiam\\BulkSmsBD\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Aslam Mahmud Siam",
+            "email": "iamsiam3official@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amsiam\\BulkSmsBD\\BulkSmsBDServiceProvider"
+            ],
+            "aliases": {
+                "BulkSmsBD": "Amsiam\\BulkSmsBD\\Facades"
+            }
+        }
+    }
+}
